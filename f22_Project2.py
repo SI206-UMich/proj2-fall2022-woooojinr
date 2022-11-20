@@ -186,6 +186,7 @@ def check_policy_numbers(data):
     """
     toops_lst = get_detailed_listing_database()
     for toop in toops_lst:
+        pass
 
 
 
