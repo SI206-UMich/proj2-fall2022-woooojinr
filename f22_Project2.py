@@ -170,12 +170,9 @@ def write_csv(data, filename):
 
 def check_policy_numbers(data):
     """
-    Write a function that takes in a list of tuples called data, (i.e. the one that is returned by
-    get_detailed_listing_database()), and parses through the policy number of each, validating the
-    policy number matches the policy number format. Ignore any pending or exempt listings.
+    Write a function that takes in a list of tuples called data, (ie. the one that is returned by get_detailed_listing_database()), and parses through the policy number of each, validating the policy number matches the policy number format. Ignore any pending or exempt listings.
     Return the listing numbers with respective policy numbers that do not match the correct format.
-        Policy numbers are a reference to the business license San Francisco requires to operate a
-        short-term rental. These come in two forms, where # is a number from [0-9]:
+        Policy numbers are a reference to the business license San Francisco requires to operate a short-term rental. These come in two forms, where # is a number from [0-9]:
             20##-00####STR
             STR-000####
     .
@@ -187,7 +184,10 @@ def check_policy_numbers(data):
     ]
 
     """
-    pass
+    toops_lst = get_detailed_listing_database()
+    for toop in toops_lst:
+
+
 
 
 def extra_credit(listing_id):
